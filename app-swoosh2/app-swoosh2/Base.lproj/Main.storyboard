@@ -6,7 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -24,39 +24,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="welcomeScreenBG" translatesAutoresizingMaskIntoConstraints="NO" id="grb-bj-j9F">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcomeScreenBG" translatesAutoresizingMaskIntoConstraints="NO" id="grb-bj-j9F">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="swooshLogo" translatesAutoresizingMaskIntoConstraints="NO" id="lxa-tw-3z2">
-                                <rect key="frame" x="108" y="6" width="139" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swooshLogo" translatesAutoresizingMaskIntoConstraints="NO" id="lxa-tw-3z2">
+                                <rect key="frame" x="128" y="20" width="119" height="20"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GO ALL IN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQw-l2-I4h">
-                                <rect key="frame" x="59" y="119" width="257" height="76"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GO ALL IN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQw-l2-I4h">
+                                <rect key="frame" x="57.5" y="125" width="260" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="Z9C-0U-xaK"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="48"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ON GOING ALL OUT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I5A-mQ-paT">
-                                <rect key="frame" x="59" y="182" width="257" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="24"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Find a team in your city &amp; dominate the league" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sWu-ha-ety">
-                                <rect key="frame" x="59" y="262" width="257" height="67"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find a team in your city &amp; dominate the league" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sWu-ha-ety">
+                                <rect key="frame" x="57.5" y="239" width="260" height="41"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="be2-9U-OV9" customClass="BorderButton" customModule="app_swoosh2" customModuleProvider="target">
-                                <rect key="frame" x="28" y="595" width="318" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ON GOING ALL OUT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I5A-mQ-paT">
+                                <rect key="frame" x="57.5" y="191" width="260" height="33"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="be2-9U-OV9" customClass="BorderButton" customModule="app_swoosh2" customModuleProvider="target">
+                                <rect key="frame" x="16" y="597" width="343" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2oa-3i-2ZB"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                                 <state key="normal" title="GET STARTED">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -64,7 +64,25 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="wPS-5T-Boa"/>
+                        <constraints>
+                            <constraint firstItem="be2-9U-OV9" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="6tp-gB-YF4"/>
+                            <constraint firstItem="sWu-ha-ety" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="814-Zc-Cdx"/>
+                            <constraint firstItem="grb-bj-j9F" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9Cr-xQ-iiG"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="be2-9U-OV9" secondAttribute="bottom" constant="20" id="FgL-3m-ebV"/>
+                            <constraint firstItem="lxa-tw-3z2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="G5Z-0X-QDa"/>
+                            <constraint firstItem="I5A-mQ-paT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JaU-RU-7Yz"/>
+                            <constraint firstItem="I5A-mQ-paT" firstAttribute="top" secondItem="yQw-l2-I4h" secondAttribute="bottom" id="ME9-5Y-vwb"/>
+                            <constraint firstAttribute="trailing" secondItem="grb-bj-j9F" secondAttribute="trailing" id="MX0-Al-aZd"/>
+                            <constraint firstItem="grb-bj-j9F" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="TB1-Uy-UAw"/>
+                            <constraint firstItem="lxa-tw-3z2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="20" id="a8c-9W-kul"/>
+                            <constraint firstItem="sWu-ha-ety" firstAttribute="width" secondItem="I5A-mQ-paT" secondAttribute="width" id="bzZ-wM-fjT"/>
+                            <constraint firstItem="yQw-l2-I4h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ikh-UH-Def"/>
+                            <constraint firstItem="sWu-ha-ety" firstAttribute="top" secondItem="I5A-mQ-paT" secondAttribute="bottom" constant="15" id="luQ-Ek-d4f"/>
+                            <constraint firstItem="yQw-l2-I4h" firstAttribute="top" secondItem="lxa-tw-3z2" secondAttribute="bottom" constant="85" id="ojR-XQ-4wb"/>
+                            <constraint firstAttribute="bottom" secondItem="grb-bj-j9F" secondAttribute="bottom" id="tUU-Vi-Nn2"/>
+                            <constraint firstItem="I5A-mQ-paT" firstAttribute="width" secondItem="yQw-l2-I4h" secondAttribute="width" id="tsL-7M-nqS"/>
+                            <constraint firstItem="be2-9U-OV9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="vYN-2v-Rer"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="bgImg" destination="grb-bj-j9F" id="nVo-GW-v6F"/>
@@ -73,7 +91,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+            <point key="canvasLocation" x="135" y="133.09859154929578"/>
         </scene>
     </scenes>
     <resources>
