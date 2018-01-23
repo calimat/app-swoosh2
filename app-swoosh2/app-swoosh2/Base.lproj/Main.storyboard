@@ -61,6 +61,9 @@
                                 <state key="normal" title="GET STARTED">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="rx3-NM-xFy" kind="show" id="5Rb-1w-1gP"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -169,28 +172,42 @@
                                     <constraint firstAttribute="height" constant="50" id="eRM-5m-dCY"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
-                                <state key="normal" title="FINISH">
+                                <state key="normal" title="NEXT">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i8R-DJ-xa0">
+                                <rect key="frame" x="16" y="10" width="44" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="3el-ff-Lko"/>
+                                    <constraint firstAttribute="height" constant="33" id="QLE-6b-tK0"/>
+                                </constraints>
+                                <state key="normal" image="backButton"/>
+                                <connections>
+                                    <segue destination="Eeq-gG-mdt" kind="unwind" unwindAction="unwindFromSkillVCWithUnwindSegue:" id="GNW-T9-CkD"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="HoJ-Fg-Tpi" secondAttribute="trailing" id="4Oe-Xe-Ygj"/>
                             <constraint firstAttribute="bottomMargin" secondItem="F8G-ih-e00" secondAttribute="bottom" constant="20" id="AgO-wL-Qbp"/>
+                            <constraint firstItem="i8R-DJ-xa0" firstAttribute="top" secondItem="tPF-XL-29A" secondAttribute="topMargin" constant="10" id="EtJ-6z-qAX"/>
                             <constraint firstItem="F8G-ih-e00" firstAttribute="leading" secondItem="tPF-XL-29A" secondAttribute="leadingMargin" id="OZy-hM-dg0"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Hol-sc-0vR" secondAttribute="trailing" id="Rpa-Vf-Kug"/>
                             <constraint firstAttribute="trailingMargin" secondItem="F8G-ih-e00" secondAttribute="trailing" id="Wqn-dF-wjV"/>
                             <constraint firstItem="Hol-sc-0vR" firstAttribute="leading" secondItem="tPF-XL-29A" secondAttribute="leadingMargin" id="X0D-Oc-6qm"/>
                             <constraint firstItem="Hol-sc-0vR" firstAttribute="top" secondItem="tPF-XL-29A" secondAttribute="topMargin" constant="20" id="g5O-WD-NIC"/>
                             <constraint firstItem="HoJ-Fg-Tpi" firstAttribute="top" secondItem="Hol-sc-0vR" secondAttribute="bottom" constant="50" id="vRQ-Tt-KmX"/>
+                            <constraint firstItem="i8R-DJ-xa0" firstAttribute="leading" secondItem="tPF-XL-29A" secondAttribute="leadingMargin" id="wFC-by-q9f"/>
                             <constraint firstItem="HoJ-Fg-Tpi" firstAttribute="leading" secondItem="tPF-XL-29A" secondAttribute="leadingMargin" id="zm1-PE-UKP"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eVm-nZ-gSY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Eeq-gG-mdt" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="800.79999999999995" y="132.68365817091455"/>
+            <point key="canvasLocation" x="882" y="133"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Rer-Yx-4ji">
@@ -282,10 +299,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Y8-96-Asb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1448.8" y="142.57871064467767"/>
+            <point key="canvasLocation" x="1535" y="133"/>
         </scene>
     </scenes>
     <resources>
+        <image name="backButton" width="29" height="24"/>
         <image name="beginnerBallerBG" width="414" height="736"/>
         <image name="desiredLeagueBG" width="414" height="736"/>
         <image name="swooshLogo" width="119" height="20"/>
